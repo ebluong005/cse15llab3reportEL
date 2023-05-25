@@ -1,12 +1,13 @@
 **LAB 3 REPORT**
 **RESEARCHING COMMANDS**
 
-I will be researching the find command for this report.
+I will be researching the find command for this report. The "find" command is 
+used to search for files and directories within a specified directory hierarchy.
+It traverses through directories recursively, allowing you to locate files based on various criteria such as name, size, modification time,
+permissions, and more. 
 
 **Command Option 1 (-type)**
 
-The type command for files used to find the type of files. With type d as the input, the output will be all the directories in the file. 
-The command input type f will give the output of all files in the branch.
 
 Example 1 
 
@@ -14,6 +15,10 @@ Command
 ``` 
 find ./technical -type d
  ``` 
+
+The "-type d" option in the "find" command is useful because it allows you to specifically search for directories. 
+By using this option, you can filter the search results to only include directories and exclude any other types of files. 
+The command above is used to find all diectories in "./technical".
 
 Output
 ``` 
@@ -38,6 +43,10 @@ Command
 ``` 
 find ./technical -type f
 ``` 
+
+The type command for files used to find the type of files. With type d as the input, the output will be all the directories in the file. 
+The command input type f will give the output of all files in the branch.
+The command above is finding all files in "./technical"
 
 Output
 ``` 
@@ -1088,7 +1097,7 @@ Command
 find ./technical -size -500c
 
  ``` 
-
+The command above is uszed to find all the 
 Output
 ``` 
 ./technical
@@ -1139,7 +1148,8 @@ Output
 ``` 
 
 **Command Option 3 (Name)**
-This option allows you to search for files with a specific name or pattern. It is useful for finding files that are grouped by label or finding specific files.
+The "find" command with the "-name" option allows you to search for files and directories based on their names or patterns. 
+It is particularly useful when you want to locate files that match a specific name or pattern within a directory hierarchy. 
 
 Example 1 
 
@@ -1171,7 +1181,10 @@ chapter-1.txt
 
 **Command Option 4 (empty)**
 
-This option searches for files or directories that are empty. This can be useful for finding directories that need to be cleaned up or files that should be deleted.
+The "find . -type  -empty" command is useful for locating empty directories within a directory hierarchy. 
+It helps you efficiently manage disk space, maintain an organized file system, automate cleanup tasks, 
+and troubleshoot potential issues related to empty directories.
+
 Example 1 
 
 Command
